@@ -7,7 +7,7 @@ RULES_HASKELL_VERSION = "fix259"
 
 http_archive(
     name = "io_tweag_rules_haskell",
-    sha256 = "a6a3ca731bd15a232c33d2912097501649279ddffe03d809fe691ad28eaf5d51",
+    sha256 = "1c58e855ee08788b8e81f08da25757bfefea5967297195c720d72b5134643d7e";
     strip_prefix = "rules_haskell-%s" % RULES_HASKELL_VERSION,
     urls = ["https://github.com/tweag/rules_haskell/archive/%s.tar.gz" % RULES_HASKELL_VERSION],
 )

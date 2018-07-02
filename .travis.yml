@@ -17,7 +17,7 @@ install:
 - echo 'build --jobs=4 --curses=no --verbose_failures' >> $HOME/.bazelrc
 - echo "import %workspace%/tools/bazelrc/linux-$CC" >> $HOME/.bazelrc
 
-script: bazel build -c dbg @haskell_clock//:clock
+script: bazel test //...
 
 git:
   depth: 1

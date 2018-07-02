@@ -1,0 +1,7 @@
+load("@io_tweag_rules_haskell//haskell:haskell.bzl", "haskell_test")
+
+haskell_test(
+    name = "test",
+    srcs = ["Main.hs"],
+    prebuilt_dependencies = ["base"],
+)

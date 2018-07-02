@@ -17,7 +17,6 @@ load("@io_tweag_rules_haskell//haskell:repositories.bzl", "haskell_repositories"
 haskell_repositories()
 
 load("@io_tweag_rules_haskell//haskell:ghc_bindist.bzl", "ghc_bindist")
-load("//third_party/haskell:haskell.bzl", "new_cabal_package")
 
 # This repository rule creates @ghc repository.
 ghc_bindist(
@@ -25,8 +24,3 @@ ghc_bindist(
 )
 
 register_toolchains("//:ghc")
-
-new_cabal_package(
-    package = "clock-0.7.2",
-    sha256 = "886601978898d3a91412fef895e864576a7125d661e1f8abc49a2a08840e691f",
-)
